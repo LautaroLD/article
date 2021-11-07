@@ -1,0 +1,50 @@
+@import 'mixins';
+@import 'global';
+@import 'responsive';
+@import 'person';
+
+body {
+    height: 100%;
+}
+
+main {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    padding         : 90px 50px;
+    background-color: $Light-Grayish-Blue;
+
+    .article-container {
+        background-color: #fff;
+        border-radius   : $raius;
+
+        .img-card-container {
+            display            : flex;
+            width              : 100%;
+            height             : 200px;
+            background-image   : url('/images/drawers.jpg');
+            background-position: center;
+            background-repeat  : no-repeat;
+            background-size    : cover;
+            border-radius      : 5% 5% 0 0;
+        }
+
+        .text-card-container {
+            text-align : start;
+            line-height: 1.5;
+
+            .title-card, .text-card {
+                padding    : 20px 30px 10px;
+            }  
+            .title-card {
+                color: $Very-Dark-Grayish-Blue;
+                font-size: $Font-title;
+            }
+
+            .text-card {
+                color     : $Desaturated-Dark-Blue;
+                font-size : $Font-body;
+            }
+        }
+    }
+}

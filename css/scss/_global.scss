@@ -1,0 +1,17 @@
+$Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+$Desaturated-Dark-Blue : hsl(214, 17%, 51%);
+$Grayish-Blue          : hsl(212, 23%, 69%);
+$Light-Grayish-Blue    : hsl(210, 46%, 95%);
+$Font-title             : 2rem;
+$Font-body             : 1.5rem;
+$raius: 15px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size  : 62.5%;
+    font-family: 'Manrope', sans-serif;
+}

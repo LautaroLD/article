@@ -1,0 +1,41 @@
+html {
+    @include respond-to (550px) {
+        main {
+            .article-container {
+                display              : grid;
+                grid-template-columns: 1.4fr 2fr;
+
+                .img-card-container {
+                    height       : 100%;
+                    border-radius: $raius 0 0 $raius;
+                }
+
+                .share-section-desktop {
+                    position             : absolute;
+                    top                  : -40px;
+                    right                : -30px;
+                    display              : flex;
+                    padding              : 10px;
+                    align-items          : center;
+                    background-color     : $Very-Dark-Grayish-Blue;
+                    grid-template-columns: 1fr 2fr 1fr;
+                    border-radius        :$raius;
+
+                    p {
+                        color         : $Grayish-Blue;
+                        text-transform: uppercase;
+                        font-size     : $Font-body - .3rem;
+                        font-weight   : bold;
+                        letter-spacing: 5px;
+                        margin-right: 10px;
+                    }
+                    .share-links-container {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
